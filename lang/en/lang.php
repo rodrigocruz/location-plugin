@@ -1,9 +1,7 @@
-<?php
-
-return [
+<?php return [
     'plugin' => [
         'name' => 'Location',
-        'description' => 'Location based features, such as Country and State.'
+        'description' => 'Location based features, such as Country and State.',
     ],
     'permissions' => [
         'settings' => 'Locations management',
@@ -13,7 +11,7 @@ return [
         'new' => 'New Location',
         'create_title' => 'Create Location',
         'update_title' => 'Edit Location',
-        'preview_title' => 'Preview Location'
+        'preview_title' => 'Preview Location',
     ],
     'locations' => [
         'menu_label' => 'Countries & States',
@@ -21,7 +19,7 @@ return [
         'disabled_label' => 'Disabled',
         'enabled_label' => 'Enabled',
         'enabled_help' => 'Disabled locations are not visible on the front-end.',
-        'enable_or_disable_title' => "Enable or Disable Locations",
+        'enable_or_disable_title' => 'Enable or Disable Locations',
         'enable_or_disable' => 'Enable or disable',
         'selected_amount' => 'Locations selected: :amount',
         'enable_success' => 'Successfully enabled those locations.',
@@ -41,6 +39,8 @@ return [
         'google_maps_key' => 'Google Maps API Key',
         'google_maps_key_comment' => 'If you plan on using Google Maps services, enter the API key for it here.',
         'credentials_tab' => 'Credentials',
+        'order_country_field' => 'Order Country by field',
+        'order_country' => 'Country Order',
     ],
     'state' => [
         'label' => 'State',
@@ -48,7 +48,7 @@ return [
         'select' => '-- select state --',
         'name_comment' => 'Enter the display name for this state.',
         'code' => 'Code',
-        'code_comment' => 'Enter a unique code to identify this state.'
+        'code_comment' => 'Enter a unique code to identify this state.',
     ],
     'country' => [
         'label' => 'Country',
@@ -56,6 +56,6 @@ return [
         'select' => '-- select country --',
         'code' => 'Code',
         'code_comment' => 'Enter a unique code to identify this country.',
-        'enabled' => 'Enabled'
-    ]
+        'enabled' => 'Enabled',
+    ],
 ];

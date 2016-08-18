@@ -12,5 +12,7 @@ class Setting extends Model
     public function initSettingsData()
     {
         $this->google_maps_key = '';
+        $this->order_country = 'asc';
+        $this->order_country_field = 'name';
     }
 }

@@ -2,6 +2,7 @@
 
 use Form;
 use Model;
+use RainLab\Location\Models\Setting;
 
 /**
  * Country Model
@@ -56,7 +57,10 @@ class Country extends Model
             return self::$nameList;
         }
 
-        return self::$nameList = self::isEnabled()->lists('name', 'id');
+        return self::$nameList = self::orderBy(
+            Setting::get('order_country_field'),
+            Setting::get('order_country')
+        )->isEnabled()->lists('name', 'id');
     }
 
     public static function formSelect($name, $selectedValue = null, $options = [])

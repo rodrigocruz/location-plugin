@@ -1,12 +1,27 @@
-# ===================================
-#  Field Definitions
-# ===================================
-
+fields: {  }
 tabs:
     fields:
-
-        # Google Maps API Key
         google_maps_key:
-            label: rainlab.location::lang.settings.google_maps_key
-            comment: rainlab.location::lang.settings.google_maps_key_comment
-            tab: rainlab.location::lang.settings.credentials_tab
+            label: 'rainlab.location::lang.settings.google_maps_key'
+            span: full
+            type: text
+            comment: 'rainlab.location::lang.settings.google_maps_key_comment'
+            tab: 'rainlab.location::lang.settings.credentials_tab'
+        order_country_by:
+            label: 'rainlab.location::lang.settings.order_country_field'
+            oc.commentPosition: ''
+            options:
+                name: Name
+                code: Code
+            span: auto
+            type: dropdown
+            tab: 'rainlab.location::lang.settings.credentials_tab'
+        order_country:
+            label: 'rainlab.location::lang.settings.order_country'
+            span: auto
+            oc.commentPosition: ''
+            options:
+                ASC: Ascending
+                DESC: Descending
+            type: dropdown
+            tab: 'rainlab.location::lang.settings.credentials_tab'
